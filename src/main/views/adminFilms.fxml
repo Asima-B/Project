@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.AdminFilmsController">
+
+
+
+    <children>
+        <VBox layoutX="8.0" layoutY="14.0" prefHeight="700.0" prefWidth="252.0" styleClass="menu" stylesheets="@css/styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#goToUsers" prefHeight="54.0" prefWidth="240.0" text="Users" />
+                <Button mnemonicParsing="false" onAction="#goToBookings" prefHeight="51.0" prefWidth="247.0" text="Bookings">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="18.0" layoutY="88.0" mnemonicParsing="false" onAction="#goToFilms" prefHeight="51.0" prefWidth="247.0" text="Films">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+                </Button>
+            <Button layoutX="18.0" layoutY="159.0" mnemonicParsing="false" onAction="#logout" prefHeight="51.0" prefWidth="247.0" text="Exit">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <AnchorPane prefHeight="375.0" prefWidth="236.0" styleClass="mainbg" stylesheets="@css/styles.css">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <children>
+                  <Label layoutX="83.0" layoutY="13.0" styleClass="t" stylesheets="@css/styles.css" text="Add Film" />
+                  <VBox layoutX="7.0" layoutY="51.0" prefHeight="233.0" prefWidth="222.0" spacing="3.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="222.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="69.0" text="Title">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="newFilmTitle" prefHeight="39.0" prefWidth="149.0" promptText="title..." />
+                           </children>
+                        </HBox>
+                        <Label prefHeight="27.0" prefWidth="110.0" text="Description">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="newFIlmDescription" prefHeight="74.0" prefWidth="222.0" promptText="write here ...." />
+                        <Label text="Date">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="33.0" prefWidth="222.0">
+                           <children>
+                              <DatePicker fx:id="fromDate" prefHeight="25.0" prefWidth="115.0" promptText="from" />
+                              <DatePicker fx:id="toDate" prefHeight="25.0" prefWidth="115.0" promptText="to" />
+                           </children>
+                        </HBox>
+                        <Label text="Times">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="33.0" prefWidth="222.0">
+                           <children>
+                              <ComboBox fx:id="filmTime1" prefHeight="25.0" prefWidth="89.0" />
+                              <ComboBox fx:id="filmTime2" prefHeight="25.0" prefWidth="84.0" />
+                              <ComboBox fx:id="filmTime3" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="85.0" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="222.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="69.0" text="Price">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="setPrice" prefHeight="33.0" prefWidth="149.0" promptText="price .." />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Button layoutX="65.0" layoutY="307.0" mnemonicParsing="false" onAction="#addNewFilm" prefHeight="46.0" prefWidth="106.0" styleClass="menu_btn" stylesheets="@css/styles.css" text="Add">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            </children>
+        </VBox>
+        <Label alignment="CENTER" layoutX="350.0" layoutY="27.0" prefHeight="79.0" prefWidth="459.0" styleClass="big_headings" stylesheets="@css/styles.css" text="Admin Panel - Films" />
+        <ImageView fitHeight="89.0" fitWidth="59.0" layoutX="273.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/Movie-PNG-Transparent-Image.png" />
+            </image>
+        </ImageView>
+        <TableView fx:id="filmTable" layoutX="279.0" layoutY="131.0" prefHeight="515.0" prefWidth="719.0">
+            <columns>
+                <TableColumn fx:id="filmTitle" prefWidth="116.0" text="Film Title" />
+                <TableColumn fx:id="description" prefWidth="196.0" text="Description" />
+                <TableColumn fx:id="startDate" prefWidth="104.0" text="Start Date" />
+            <TableColumn fx:id="endDate" prefWidth="83.0" text="End Date" />
+                <TableColumn fx:id="times" minWidth="0.0" prefWidth="72.0" text="Times" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

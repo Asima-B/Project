@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.AdminBookingsController">
+
+
+
+    <children>
+        <VBox layoutX="8.0" layoutY="14.0" prefHeight="236.0" prefWidth="252.0" styleClass="menu" stylesheets="@css/styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#goToUsers" prefHeight="54.0" prefWidth="240.0" text="Users" />
+                <Button mnemonicParsing="false" onAction="#goToBookings" prefHeight="51.0" prefWidth="247.0" text="Bookings" textFill="#2b251a">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+                </Button>
+                <Button layoutX="18.0" layoutY="88.0" mnemonicParsing="false" onAction="#goToFilms" prefHeight="51.0" prefWidth="247.0" text="Films">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Button>
+            <Button mnemonicParsing="false" onAction="#logout" prefHeight="51.0" prefWidth="247.0" text="Exit">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="selectedId" layoutX="118.0" layoutY="36.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            </children>
+        </VBox>
+        <Label alignment="CENTER" layoutX="384.0" layoutY="27.0" prefHeight="79.0" prefWidth="549.0" styleClass="big_headings" stylesheets="@css/styles.css" text="Admin Panel - Bookings" />
+        <ImageView fitHeight="71.0" fitWidth="71.0" layoutX="284.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/Movie-PNG-Transparent-Image.png" />
+            </image>
+        </ImageView>
+        <TableView fx:id="bookingsTable" layoutX="279.0" layoutY="131.0" prefHeight="377.0" prefWidth="685.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="46.0" text="ID" />
+                <TableColumn fx:id="userEmail" prefWidth="110.0" text="User Email" />
+            <TableColumn fx:id="filmTitle" minWidth="0.0" prefWidth="108.0" text="Film Title" />
+                <TableColumn fx:id="price" prefWidth="95.0" text="Price" />
+                <TableColumn fx:id="date" prefWidth="88.0" text="Date" />
+            <TableColumn fx:id="time" minWidth="0.0" prefWidth="109.0" text="Time" />
+            <TableColumn fx:id="seat" minWidth="0.0" prefWidth="39.0" text="Seat" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

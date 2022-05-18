@@ -1,0 +1,11 @@
+********* Ticket ID: 5  **********
+
+Booked Time: 2022-05-15
+Customer: Aidana
+Film:  Inception
+Time: 2022-05-20 18:00
+Seat: 5-3
+
+Price: 2500.0
+
+************************************************

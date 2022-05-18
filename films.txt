@@ -1,0 +1,5 @@
+ Inception, Cobb and Arthur are "extractors"; they perform corporate espionage using experimental dream-sharing technology to infiltrate their targets' subconscious and extract information, 2022-04-11,2022-04-17,15:00,18:00,22:00,2500.0
+Interstellar ,When drought dust storms and the extinction of plants lead humanity to a food crisis a team of researchers and scientists goes through a wormhole on a journey to surpass the previous limitations for human space travel and find a planet with suitable conditions for humanity,2022-04-01,2022-04-15,15:00,18:00,22:00,5000.0
+Coco,12-year-old Miguel lives in a Mexican village in a family of shoemakers and secretly dreams of becoming a musician Secretly — because in his family clan music is considered a curse,2022-04-01,2022-04-15,18:00,13:00,16:00,1500.0
+Avangers,Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity,2022-04-01,2022-04-22,13:00,18:00,21:00,2300
+Titanic,Young lovers Jack and Rose find each other on the first and last voyage of the "unsinkable" Titanic,2022-04-19,2022-04-30,17:00,15:00,21:00,2000
